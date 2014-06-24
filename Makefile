@@ -9,7 +9,7 @@ SRC:=index.js *.css
 
 build: $(SRC)
 	mkdir -p $@
-	$(CARTERO) . build/
+	$(CARTERO) -t stringify . build/
 
 test:
 	@echo "    No tests have yet been written"
