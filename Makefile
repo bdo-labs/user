@@ -1,7 +1,7 @@
 
 
 BIN:="node_modules/.bin"
-PARCELIFY:="$(BIN)/parcelify"
+CARTERO:="$(BIN)/cartero"
 
 
 SRC:=index.js *.css
@@ -9,7 +9,7 @@ SRC:=index.js *.css
 
 build: $(SRC)
 	mkdir -p $@
-	$(PARCELIFY) $< -j build/build.js -c build/build.css
+	$(CARTERO) . build/
 
 test:
 	@echo "    No tests have yet been written"

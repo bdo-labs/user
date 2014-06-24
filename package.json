@@ -28,7 +28,7 @@
   "devDependencies": {
     "angular": "^1.2.18",
     "mocha": "^1.20.1",
-    "parcelify": "^0.11.1",
+    "cartero": "^2.2.1",
     "should": "^4.0.4"
   }
 }
