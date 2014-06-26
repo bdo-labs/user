@@ -1,22 +1,22 @@
 /**
  * Module dependencies.
  */
-var angular = require('angular');
-require('angular-router-browserify')(angular);
-var user = angular.module('user', ['ngRoute']);
 
-user.config('$routeProvider', function ($routeProvider) {
-  $routeProvider
-    .when('/login', {
+var user = angular.module('user', ['ui.router']);
+
+user.config(['$stateProvider', function ($stateProvider) {
+  $stateProvider
+    .state('login', {
+      url: '/login',
       controller: 'UserController'
     });
-});
+}]);
 
 
 user.controller('UserController', ['$scope', function ($scope) {
-  $scope.boxes = {
+  $scope.boxes = [{
     name: 'login-module'
-  }
+  }]
 }]);
 
 user.directive('loginModule', function () {

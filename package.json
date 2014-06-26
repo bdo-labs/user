@@ -5,23 +5,10 @@
   "style": [
     "*.css"
   ],
-  "image": [
-    "assets/BDO.png"
-  ],
-  "transforms": [
-    "stringify"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "test": "make test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bdo-labs/user.git"
   },
-  "keywords": [
-    "user"
-  ],
   "author": "BDO-labs",
   "license": "ISC",
   "bugs": {
@@ -30,10 +17,20 @@
   "homepage": "https://github.com/bdo-labs/user",
   "devDependencies": {
     "angular": "^1.2.18",
-    "angular-router-browserify": "0.0.1",
+    "atomify": "^3.1.2",
     "mocha": "^1.20.1",
-    "cartero": "^2.2.1",
     "should": "^4.0.4",
-    "stringify": "git://github.com/bdo-labs/stringify.git"
+    "partialify": "^3.1.1",
+    "angular-ui-router": "^0.2.10"
+  },
+  "atomify": {
+    "js": {
+      "entry": "index.js"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "partialify"
+    ]
   }
 }
