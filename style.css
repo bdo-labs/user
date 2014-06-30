@@ -1,4 +1,6 @@
-
+body {
+	background: hotpink;
+}
 .foo {
   content: 'bar';
   background: url(assets/BDO.png);
