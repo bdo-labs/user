@@ -1,0 +1,20 @@
+<a href="">
+	<img ng-src="{{user.image}}" alt="{{user.name}}">
+
+	<span ng-if="user.notifications">{{user.notifications.length}}</span>
+</a>
+
+<ul>
+	<li><a href="">Notifikasjoner</a>
+		<ul ng-if="user.notifications" class="notifications">
+			<li ng-repeat="notification in user.notifications">
+				{{notification.title}}
+			</li>
+		</ul>
+		<p ng-if="!user.notifications" class="notifications">
+ 			Ingen notifikasjoner
+		</p>
+	</li>
+	<li><a href="">Innstillinger</a></li>
+	<li><a href="">Logg ut</a></li>
+</ul>
