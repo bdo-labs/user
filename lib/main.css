@@ -1,0 +1,78 @@
+@charset "CP850";
+/* line 6, sass/_user-menu.scss */
+.user-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 11, sass/_user-menu.scss */
+.user-menu img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+/* line 18, sass/_user-menu.scss */
+.user-menu > a {
+  position: relative;
+}
+/* line 21, sass/_user-menu.scss */
+.user-menu > a > span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  background: white;
+  border: #34495e 2px solid;
+}
+/* line 43, sass/_user-menu.scss */
+.user-menu > ul:last-child {
+  background: #34495e;
+  border: none;
+  min-width: 200px;
+  padding: 0;
+  margin-top: 3px;
+  right: 0;
+  left: auto;
+  list-style: none;
+}
+/* line 57, sass/_user-menu.scss */
+.user-menu > ul:last-child > li {
+  display: block;
+  border-bottom: 1px solid white;
+}
+/* line 62, sass/_user-menu.scss */
+.user-menu > ul:last-child a {
+  display: block;
+  padding: 7px 15px;
+  color: white;
+}
+/* line 68, sass/_user-menu.scss */
+.user-menu > ul:last-child a:hover {
+  background: #46627f;
+}
+/* line 73, sass/_user-menu.scss */
+.user-menu > ul:last-child:before {
+  content: '▲';
+  color: #34495e;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 40px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+}
+/* line 89, sass/_user-menu.scss */
+.user-menu .notifications {
+  list-style: none;
+  padding: 0 5px 5px 25px;
+  color: white;
+}
+/* line 95, sass/_user-menu.scss */
+.user-menu p.notifications {
+  opacity: 0.5;
+}
