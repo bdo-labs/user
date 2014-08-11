@@ -36,7 +36,6 @@
   },
   "dependencies": {
     "custom-elements": "git+ssh://git@github.com:bdo-labs/custom-elements.git",
-    "services": "git+https://edbdo.visualstudio.com/DefaultCollection/BDO%20Labs/_git/Services",
-    "ui-router": "0.0.1"
+    "services": "git+https://edbdo.visualstudio.com/DefaultCollection/BDO%20Labs/_git/Services"
   }
 }
